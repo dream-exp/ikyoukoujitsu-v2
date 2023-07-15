@@ -1,4 +1,4 @@
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 
 import { MetaType } from "@/types";
@@ -15,7 +15,7 @@ const PostCard: React.FC<Props> = (props) => {
   return (
     <Link href={getPostURLFromMeta(meta)}>
       <div className="w-[350px] flex flex-col gap-2 tracking-[0.08em] cursor-pointer hover:opacity-70 transition-all">
-        <Image
+        <NextImage
           src={meta.share_img}
           alt={meta.Title}
           width={350}
@@ -25,7 +25,9 @@ const PostCard: React.FC<Props> = (props) => {
           <span className="text-neutral-400 text-xs">
             {getFormattedDate(new Date(meta.date))}
           </span>
-          <span className="text-neutral-500 text-sm -ml-1">{meta.Title}</span>
+          <span className="text-neutral-500 text-sm font-semibold">
+            {meta.Title}
+          </span>
         </div>
       </div>
     </Link>

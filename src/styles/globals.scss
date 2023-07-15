@@ -9,7 +9,7 @@ body {
 
 .article-content {
   p {
-    @apply mt-4 w-full leading-8;
+    @apply mt-4 w-full leading-8 text-sm;
   }
 
   span.caption {
