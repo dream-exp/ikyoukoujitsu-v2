@@ -46,11 +46,11 @@ const Home: NextPage<Props> = (props) => {
         </div>
       </div>
       <div className="w-full flex flex-col items-center gap-16 py-[100px]">
-        <div className="grid xl:grid-cols-3 sm:grid-cols-1 gap-x-14 gap-y-20">
-          {contentMetas.map((meta, idx) => {
+        <div className="grid sm:grid-cols-1 xl:grid-cols-3 gap-x-14 gap-y-20">
+          {contentMetas.slice(0, 9).map((meta, idx) => {
             return (
               <div key={`postcard_${idx}`}>
-                <PostCard meta={contentMetas[idx]} />
+                <PostCard meta={meta} />
               </div>
             );
           })}
