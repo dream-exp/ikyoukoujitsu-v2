@@ -1,15 +1,14 @@
-import Image from "next/image";
-
 const img = (props: any) => {
   return (
-    <Image
-      {...props}
-      fill
-      placeholder="blur"
-      quality={100}
-      className="object-cover !relative w-auto animate-fade-in"
-      blurDataURL={props.src}
-    />
+    <img {...props} loading="lazy" className="animate-fade-in" />
+    // <Image
+    //   {...props}
+    //   fill
+    //   placeholder="blur"
+    //   quality={100}
+    //   className="object-cover !relative w-auto animate-fade-in"
+    //   blurDataURL={props.src}
+    // />
   );
 };
 
