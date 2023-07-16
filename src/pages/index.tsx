@@ -28,6 +28,7 @@ const Home: NextPage<Props> = (props) => {
             src={contentMetas[0].share_img}
             alt="naoshima"
             fill
+            priority={true}
             className="w-full h-full object-cover z-0 absolute top-0 left-0"
           />
           <Link href={getPostURLFromMeta(contentMetas[0])}>
