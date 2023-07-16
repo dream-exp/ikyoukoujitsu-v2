@@ -1,10 +1,10 @@
 import { MDXProvider } from "@mdx-js/react";
 import Link from "next/link";
 
-import components from "@/components/common/MDXComponent";
 import getFormattedDate from "@/utils/getFormattedDate";
 
 import Footer from "./Footer";
+import components from "./MDXComponent";
 
 type Props = {
   children: React.ReactNode;
