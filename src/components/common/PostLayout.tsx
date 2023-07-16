@@ -1,6 +1,6 @@
 import { MDXProvider } from "@mdx-js/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import getFormattedDate from "@/utils/getFormattedDate";
 
@@ -43,7 +43,7 @@ const PostLayout: React.FC<Props> = (props) => {
               <h2 className="w-full ext-xl font-bold">{meta.Title}</h2>
             </div>
             <div className="article-content flex flex-col items-center">
-              {children}
+              <Suspense fallback={<>読み込み中</>}>{children}</Suspense>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 const img = (props: any) => {
   return (
-    <img {...props} loading="lazy" className="animate-fade-in" />
+    <img {...props} loading="lazy" className="animate-fade-in aspect-auto" />
     // <Image
     //   {...props}
     //   fill
