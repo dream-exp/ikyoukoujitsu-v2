@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const img = (props: any) => {
+  console.log(props);
   return (
     // <img
     //   {...props}
