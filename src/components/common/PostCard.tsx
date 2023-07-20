@@ -1,4 +1,4 @@
-import NextImage from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { MetaType } from "@/types";
@@ -15,7 +15,7 @@ const PostCard: React.FC<Props> = (props) => {
   return (
     <Link href={getPostURLFromMeta(meta)}>
       <div className="w-[350px] flex flex-col gap-2 tracking-[0.08em] cursor-pointer hover:opacity-70 transition-all">
-        <NextImage
+        <Image
           src={meta.share_img}
           alt={meta.Title}
           width={350}
