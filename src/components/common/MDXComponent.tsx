@@ -1,6 +1,15 @@
 import Image from "next/image";
 
+import { getWindowSize } from "@/utils/getWindowSize";
+
 const img = (props: any) => {
+  const { height, width } = getWindowSize();
+
+  const imgWidth = width >= 1000 ? 1000 : width;
+  const imgHeight = width >= 1000 ? 666 : width / 1.5;
+
+  console.log(imgWidth, imgHeight);
+
   return (
     // <img
     //   {...props}
@@ -10,8 +19,9 @@ const img = (props: any) => {
     // />
     <Image
       {...props}
-      className="object-contain !relative w-auto h-auto animate-fade-in"
-      fill
+      className="object-contain !relative w-auto h-full animate-fade-in"
+      width={imgWidth}
+      height={imgHeight}
       placeholder="blur"
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjuHXr1n8ACK4DjtGRIJ0AAAAASUVORK5CYII="
       unoptimized
