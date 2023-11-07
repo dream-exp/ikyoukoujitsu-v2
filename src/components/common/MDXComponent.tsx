@@ -19,7 +19,7 @@ const img = (props: any) => {
     // />
     <Image
       {...props}
-      className="object-contain !relative w-auto h-full animate-fade-in"
+      className="object-contain w-full h-full animate-fade-in"
       width={1000}
       height={1000}
       placeholder="blur"
