@@ -19,9 +19,14 @@ const img = (props: any) => {
     // />
     <Image
       {...props}
-      className="object-contain w-full h-full animate-fade-in"
+      className="object-contain animate-fade-in"
       width={1000}
       height={1000}
+      sizes="100vw"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
       placeholder="blur"
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjuHXr1n8ACK4DjtGRIJ0AAAAASUVORK5CYII="
       unoptimized
