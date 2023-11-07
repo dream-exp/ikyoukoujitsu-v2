@@ -17,6 +17,6 @@ body {
   }
 
   img {
-    @apply my-8 max-h-[100vh] mx-auto;
+    @apply my-8 mx-auto max-h-[900px] max-w-fit w-full;
   }
 }
