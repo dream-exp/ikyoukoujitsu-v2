@@ -4,10 +4,9 @@ import Link from "next/link";
 import getFormattedDate from "@/utils/getFormattedDate";
 
 import Footer from "./Footer";
-import components from "./MDXComponent";
 
 const customComponents = {
-  img: components.img,
+  // img: components.img,
 };
 
 type Props = {
